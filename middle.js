@@ -10,6 +10,7 @@
 // For arrays with an even number of elements, an array
 // containing the two elements in the middle should be returned
 
+
 const middle = function (arr) {
   if (arr.length === 1 || arr.length === 2) {
     return [];
@@ -23,7 +24,7 @@ const middle = function (arr) {
   }
 };
 
-console.log(middle([1]));
-console.log(middle([1, 2]));
-console.log(middle([1, 2, 3, 4]));
-console.log(middle([2, 1, 4, 7, 9]));
+
+
+
+module.exports = middle
