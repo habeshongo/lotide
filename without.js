@@ -26,7 +26,7 @@ const without = function (arr1, arr2) {
       ans.push(ele);
     }
   }
-  console.log(ans);
+  return ans;
 };
 
 without([1, 2, 3], [1]); // => [2, 3]
