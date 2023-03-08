@@ -1,33 +1,25 @@
-// It will take in two parameters as well:
+/* The function should take in two parameters:
+ The array to work with
+ The callback */
 
-// The array to work with
-// The callback (which Lodash calls "predicate")
+/* The function will return a "slice of the array with elements taken from the beginning."
+ It should keep going until the callback/predicate returns a truthy value.*/
 
-// The function will return a "slice of the array with elements taken from the beginning."
-// It should keep going until the callback/predicate returns a truthy value.
-
-// To keep things simple, the callback should only be provided one value: The item in the array.
-// Instruction
-// Implement takeUntil which will keep collecting items from a provided array until the callback
-// provided returns a truthy value.
+/* The callback should only be provided one value: The item in the array.
+ takeUntil will keep collecting items from a provided array until the callback
+ provided returns a truthy value.*/
 
 const takeUntil = function (array, callback) {
-  // ...
-
   let output = [];
   array.map((e, i) => {
     let result = callback(e);
-    // console.log(result);
-    if (result) {
+     if (result) {
       output = array.slice(0, i);
     }
   });
   return output;
 };
 
-// const callback = function (x) {
-//   return x < 0;
-// };
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, (x) => x < 0);
