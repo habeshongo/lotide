@@ -1,5 +1,3 @@
-
-
 const tail = function (arr) {
   let newArr = [];
   //An array with only one element or an empty array should yield an empty array for its tail
