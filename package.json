@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@devferguson/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Compilation of lotide functions.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/habeshongo/lotide.git"
   },
-  "author": "",
+  "author": "Ashton Ferguson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/habeshongo/lotide/issues"

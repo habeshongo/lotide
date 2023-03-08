@@ -24,7 +24,11 @@ const middle = function (arr) {
   }
 };
 
-
+console.log(middle([1]));
+console.log(middle([1, 2]));
+console.log(middle([1, 2, 3, 4]));
+console.log(middle([2, 1, 4, 7, 9]));
 
 
 module.exports = middle
+
