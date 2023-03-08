@@ -5,11 +5,9 @@ const assertEqual = function (actual, expected) {
     console.log(`Assertion Failed🚫: ${actual} !== ${expected}.`);
   }
 };
-// The function should take in a sentence (as a string) and then return
-//a count of each of the letters in that sentence.
+// The function should take in a sentence (as a string) and then return a count of each of the letters in that sentence.
 //Need to return an object.
 // For example, countLetters('LHL') should return results indicating that L appears twice, and H once.
-
 const countLetters = function (str) {
   let ans = {};
   for (const character of str) {
