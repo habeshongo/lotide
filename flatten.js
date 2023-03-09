@@ -1,6 +1,6 @@
-//Create a function flatten which will take in an array containing
-//elements including nested arrays of elements, and return a "flattened"
-//version of the array.
+/*Function flatten will take in an array containing
+elements including nested arrays of elements, and return a "flattened"
+version of the array.*/
 
 const flatten = function (arr) {
   let ans = [];
