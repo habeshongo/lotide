@@ -6,11 +6,12 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-// function eqObjects which will take in two objects and returns
-//true or false, based on a perfect match.
+/* The function eqObjects will take in two objects and returns
+true or false, based on a perfect match.
 
-// Returns true if both objects have identical keys with identical values.
-// Otherwise you get back a big fat false!
+ If both objects have identical keys with identical values, returns true.
+ Otherwise it should return false.
+*/
 
 const eqObjects = function (object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
