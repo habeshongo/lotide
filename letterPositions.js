@@ -1,8 +1,6 @@
+//Function that takes in a string and returns all indices of letter positions in the string.
 const letterPositions = function (sentence) {
   const results = {};
-  // logic to update results here
-  //let str = sentence.split(" ").join(""); // .split converts the string to an array and .join puts it back together to a string.
-
   for (let i = 0; i < sentence.length; i++) {
     let key = sentence[i];
     if (key !== " ") {
@@ -20,7 +18,7 @@ const letterPositions = function (sentence) {
 console.log(letterPositions("lighthouse in the house"));
 
 /*
-"Lighthouse in the house" should lloke like this below:
+"Lighthouse in the house" should look like this below:
 
 { 
   l: [0],
