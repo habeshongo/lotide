@@ -1,27 +1,24 @@
 # Lotide
-
 A mini clone of the [Lodash](https://lodash.com) library.
-Lotide folder for smaller functions that we build to exercise our programming chops throughout the first four weeks at LHL.
 
 ## Purpose
+Lotide folder contains smaller functions that we build to exercise our programming chops throughout the first four weeks at LHL.
+
 
 **_BEWARE:_ This library was published for learning purposes. It is _not_ intended for use in production-grade software.**
-
 This project was created and published by Ashton Ferguon as part of my learnings at Lighthouse Labs. 
 
 ## Usage
 
-**Install it:**
+  **Install it:**
+  `npm install @devferguson/lotide`
 
-`npm install @devferguson/lotide`
+  **Require it:**
+  `const _ = require('@devferguson/lotide');`
 
-**Require it:**
+  **Call it:**
+  `const results = _.tail([1, 2, 3]) // => [2, 3]`
 
-`const _ = require('@devferguson/lotide');`
-
-**Call it:**
-
-`const results = _.tail([1, 2, 3]) // => [2, 3]`
 
 ## Documentation
 
