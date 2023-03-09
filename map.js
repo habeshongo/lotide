@@ -24,21 +24,17 @@ const assertArraysEqual = function (arr1, arr2) {
   console.log(eqArrays(arr1, arr2));
 };
 
-// Our map function will take in two arguments:
-
-// An array to map
-// A callback function
-// The map function will return a new array based
-// on the results of the callback function.
+/* Our map function will take in two arguments:
+  1. An array to map through
+  2. A callback function
+The map function will return a new array based
+ on the results of the callback function. */
 
 const words = ["ground", "control", "to", "major", "tom"];
 
 const map = function (array, callback) {
   const results = [];
   for (let item of array) {
-    // console.log("item before:", item);
-    // console.log("item after:", callback(item));
-    // console.log("---");
     results.push(callback(item));
   }
   return results;
