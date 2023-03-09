@@ -1,15 +1,14 @@
-// Implement middle which will take in an array and
-// return the middle-most element(s) of the given array.
+/* Implement middle which will take in an array and
+ return the middle-most element(s) of the given array.
 
-// For arrays with one or two elements, there is no
-// middle. Return an empty array.
+ For arrays with one or two elements, there is no
+ middle. Return an empty array.
 
-// For arrays with odd number of elements, an array
-// containing a single middle element should be returned.
+ For arrays with odd number of elements, an array
+ containing a single middle element should be returned.
 
-// For arrays with an even number of elements, an array
-// containing the two elements in the middle should be returned
-
+ For arrays with an even number of elements, an array
+ containing the two elements in the middle should be returned. */
 
 const middle = function (arr) {
   if (arr.length === 1 || arr.length === 2) {
@@ -29,6 +28,4 @@ console.log(middle([1, 2]));
 console.log(middle([1, 2, 3, 4]));
 console.log(middle([2, 1, 4, 7, 9]));
 
-
-module.exports = middle
-
+module.exports = middle;
