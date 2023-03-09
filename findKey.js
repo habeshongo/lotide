@@ -11,7 +11,7 @@ const assertEqual = function (actual, expected) {
 // If no key is found, then it should return undefined.
 
 const findKey = function (obj, callback) {
-  let ans = "";
+  let ans = undefined;
   for (const key in obj) {
     let output = callback(obj[key]);
     if (output) {
@@ -31,7 +31,7 @@ let result1 = findKey(
     Ora: { stars: 2 },
     Akelarre: { stars: 3 },
   },
-  (x) => x.stars === 2
+  (x) => x.stars === 3
 ); // => "noma"
 
 console.log(result1);
