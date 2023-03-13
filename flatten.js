@@ -14,7 +14,7 @@ const flatten = function (arr) {
       ans.push(ele);
     }
   }
-  console.log(ans);
+  return ans;
 };
 
 flatten([1, 2, [3, 4], 5, [6]]); // => [1, 2, 3, 4, 5, 6]
