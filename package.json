@@ -1,14 +1,14 @@
 {
   "name": "@devferguson/lotide",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Compilation of lotide functions.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
   },
- "scripts": {
-  "test": "mocha"
-},
+  "scripts": {
+    "test": "mocha"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/habeshongo/lotide.git"
