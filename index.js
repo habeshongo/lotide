@@ -14,6 +14,7 @@ const map = require("./map");
 const middle = require("./middle");
 const tail = require("./tail");
 const takeUntil = require("./takeUntil");
+const without = require("./without");
 
 const assertEqualTest = require("./assertEqual");
 const assertArraysEqualTest = require("./assertArraysEqual");
@@ -38,4 +39,5 @@ module.exports = {
   takeUntil,
   assertEqualTest,
   assertArraysEqualTest,
+  without,
 };
