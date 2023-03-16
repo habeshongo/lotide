@@ -1,3 +1,5 @@
+const eqArrays = require("./eqArrays");
+
 const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(`Assertion Passed✅: ${actual} === ${expected}.`);
@@ -20,15 +22,9 @@ const eqObjects = function (object1, object2) {
   for (const key in object1) {
     if (!object2.hasOwnProperty(key)) {
       return false;
-    } else if (!Array.isArray(object2[key])) {
-      if (object1[key] !== object2[key]) {
+    } else if (Array.isArray(object2[key])) {
+      if (!eqArrays(object1[key], object2[key])) {
         return false;
-      }
-    } else if (Array.isArray(object1[key])) {
-      for (const e of object1[key]) {
-        if (!object2[key].includes(e)) {
-          return false;
-        }
       }
     }
   }
@@ -59,3 +55,7 @@ const longSleeveMultiColorShirtObject = {
   sleeveLength: "long",
 };
 console.log(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject)); // => false
+
+console.log(eqObjects({ a: 1, b: [2, 3] }, { b: [3, 2], a: 1 })); // => expected false
+console.log(eqObjects({ a: 1, b: [2, 3] }, { b: [2, 3, 4], a: 1 })); // => expected false
+console.log(eqObjects({ a: 1, b: [2, 2] }, { b: [2, 3], a: 1 })); // => expected false
