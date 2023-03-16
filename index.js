@@ -16,9 +16,6 @@ const tail = require("./tail");
 const takeUntil = require("./takeUntil");
 const without = require("./without");
 
-const assertEqualTest = require("./assertEqual");
-const assertArraysEqualTest = require("./assertArraysEqual");
-
 //All functions are exported as an object.
 module.exports = {
   assertArraysEqual,
@@ -37,7 +34,5 @@ module.exports = {
   middle,
   tail,
   takeUntil,
-  assertEqualTest,
-  assertArraysEqualTest,
   without,
 };
