@@ -4,9 +4,9 @@ const eqArrays = require("./eqArrays");
 //assertArraysEqual prints an appropriate message after comparing the two arrays.
 const assertArraysEqual = function (arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
-    console.log(`Assertion Passed✅: ${actual} === ${expected}.`);
+    console.log(`Assertion Passed✅`);
   } else {
-    console.log(`Assertion Failed🚫: ${actual} !== ${expected}.`);
+    console.log(`Assertion Failed🚫`);
   }
 };
 
